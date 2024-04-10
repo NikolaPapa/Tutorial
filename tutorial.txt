@@ -1,0 +1,42 @@
+# 1 "tutorial.c"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "tutorial.c"
+# 1 "function.h" 1
+int max(int a,int b){
+int temp_var;
+if(a<b){
+temp_var=b;
+}else{
+temp_var=a;
+}
+return temp_var;
+}
+# 2 "tutorial.c" 2
+int main(int argc, char* argv[]){
+int variable_a,variable_b,temp;
+variable_a=75;
+variable_b=32;
+for(int i=0;i<4;i++){
+if(variable_a<variable_b){
+variable_b=variable_b-10;
+}else{
+variable_a=variable_a-10;
+}
+}
+temp=max(variable_a,variable_b);
+return 0;
+}
+# 1 "function.h"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "function.h"
+int max(int a,int b){
+int temp_var;
+if(a<b){
+temp_var=b;
+}else{
+temp_var=a;
+}
+return temp_var;
+}
